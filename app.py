@@ -184,7 +184,7 @@ def home():
     return render_template('index.html', stats=stats)
 
 @app.route('/analysis')
-def analysis_page():  # ✅ UBAH NAMA FUNGSI INI
+def analysis():  # ✅ GUNAKAN analysis() BUKAN analysis_page()
     """Data analysis page"""
     if df is None:
         return render_template('analysis.html', data_available=False)
