@@ -8,3 +8,6 @@ plotly==5.24.1
 matplotlib==3.10.0
 seaborn==0.13.0
 joblib==1.3.0
+huggingface_hub
+pickle5   # optional, kalau Python lama
+

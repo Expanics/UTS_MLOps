@@ -47,15 +47,28 @@ def local_css():
     </style>
     """, unsafe_allow_html=True)
 
+from huggingface_hub import hf_hub_download
+import pickle
+import streamlit as st
+
+
 def load_model():
-    """Load the trained model and preprocessing objects"""
+    """Load the trained model from HuggingFace Hub"""
     try:
-        with open('models/stacking_final.pkl', 'rb') as f:
+        model_path = hf_hub_download(
+            repo_id="Expanic/Stacking_Final_UTSMLOPS",
+            filename="stacking_final.pkl"  # pastiin ini sama persis kayak nama file di HF
+        )
+
+        with open(model_path, "rb") as f:
             model = pickle.load(f)
+
         return model
-    except FileNotFoundError:
-        st.error("Model file not found. Please ensure 'models/stacking_final.pkl' exists.")
+
+    except Exception as e:
+        st.error(f"Failed to load model: {e}")
         return None
+
 
 def load_dataset():
     """Load the dataset for visualization"""
