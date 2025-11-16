@@ -281,7 +281,7 @@ def about():
     """About page"""
     return render_template('about.html')
 
-@app.route('/predict')
+@app.route('/prediction')
 def prediction_page():
     """Prediction page"""
     return render_template('prediction.html')
