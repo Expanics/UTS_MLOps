@@ -1,0 +1,5 @@
+# Build image (tanpa comment di ENV lines)
+docker build -t salary-prediction .
+
+# Run container
+docker run -p 5001:5001 salary-prediction
