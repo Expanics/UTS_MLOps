@@ -1,25 +1,28 @@
-# 📦 Streamlit App Starter Kit 
-```
-⬆️ (Replace above with your app's name)
-```
+# 💰 Salary Prediction App
 
-Description of the app ...
+A Streamlit web application that predicts salary based on user profile using machine learning.
 
-## Demo App
+## 🚀 Features
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://app-starter-kit.streamlit.app/)
+- **Salary Prediction**: Predict expected salary in USD and IDR
+- **Interactive Dashboard**: User-friendly input form
+- **Visual Analytics**: Salary distribution charts
+- **Feature Insights**: Understand what factors influence salary
 
-## GitHub Codespaces
+## 📊 Dataset
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/streamlit/app-starter-kit?quickstart=1)
+The model is trained on the `Salary_Data_Based_country_and_race.csv` dataset containing:
+- **6,694 records** of salary information
+- **Features**: Age, Gender, Education Level, Job Title, Years of Experience, Country, Race
+- **Target**: Salary (USD)
 
-## Section Heading
+Dataset location: `data/Salary_Data_Based_country_and_race.csv`
 
-This is filler text, please replace this with text for this section.
+source: https://www.kaggle.com/datasets/amirmahdiabbootalebi/salary-by-job-title-and-country/data
 
-## Further Reading
+## 🛠️ Installation
 
-This is filler text, please replace this with a explanatory text about further relevant resources for this repo
-- Resource 1
-- Resource 2
-- Resource 3
+1. Clone the repository:
+```bash
+git clone <https://github.com/Expanics/UTS_MLOps.git>
+cd salary-predictor-app
