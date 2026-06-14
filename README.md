@@ -1,5 +1,7 @@
 # 💰 Salary Prediction App
 
+video demo: https://tinyurl.com/8ehkaccx
+
 A Streamlit web application that predicts salary based on user profile using machine learning.
 
 ## 🚀 Features
